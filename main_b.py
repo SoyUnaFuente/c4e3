@@ -15,3 +15,12 @@ students = ["Emmie Grey",
 "Ruth Lawrence",
 "Nafisa Nairn",
 "Zachariah Velasquez"]
+
+
+students = [space.replace(" ", "_") for space in students]
+
+for name in range(len(students)):
+    students[name] = students[name].lower()
+
+print(students)
+
